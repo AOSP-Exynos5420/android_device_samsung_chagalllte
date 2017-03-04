@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_chagalllte.mk
+    $(LOCAL_DIR)/aosp_chagallltetmo.mk

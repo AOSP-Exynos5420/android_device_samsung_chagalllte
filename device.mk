@@ -20,10 +20,10 @@ PRODUCT_PACKAGES += \
     init.baseband.rc
 
 PRODUCT_COPY_FILES += \
-    device/samsung/chagalllte/audio/audio_policy.conf:system/etc/audio_policy.conf
+    device/samsung/chagallltetmo/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-    device/samsung/chagalllte/audio/mixer_paths.xml:system/etc/mixer_paths.xml
+    device/samsung/chagallltetmo/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 DEVICE_PACKAGE_OVERLAYS += \
-    device/samsung/chagalllte/overlay
+    device/samsung/chagallltetmo/overlay
 
 # Radio (needed for audio controls even on wifi-only)
 PRODUCT_PACKAGES += \
@@ -51,4 +51,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
-$(call inherit-product, vendor/samsung/chagalllte/chagalllte-vendor.mk)
+$(call inherit-product, vendor/samsung/chagallltetmo/chagallltetmo-vendor.mk)

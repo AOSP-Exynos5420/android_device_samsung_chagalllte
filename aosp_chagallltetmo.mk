@@ -25,22 +25,20 @@ PRODUCT_COPY_FILES += vendor/samsung/chagall-klimt-common/prebuilt/common/etc/ap
 ##$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := chagallltexx
-PRODUCT_DEVICE := chagalllte
+PRODUCT_NAME := chagallltetmo
+PRODUCT_DEVICE := chagallltetmo
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-T805
+PRODUCT_MODEL := SM-T807T
 PRODUCT_MANUFACTURER := samsung
 
 $(call inherit-product, device/samsung/chagall-klimt-common/device.mk)
-$(call inherit-product, device/samsung/chagalllte/device.mk)
+$(call inherit-product, device/samsung/chagallltetmo/device.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/chagalllte/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/chagallltetmo/device-vendor.mk)
 
-PRODUCT_NAME := aosp_chagalllte
+PRODUCT_NAME := aosp_chagallltetmo
 
 PRODUCT_PACKAGES += \
     Launcher3 \
     OneTimeInitializer \
-    Gallery2 \
-    OpenDelta
-
+    Gallery2

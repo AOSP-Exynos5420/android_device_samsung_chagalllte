@@ -1,1 +1,1 @@
-# android_device_samsung_chagalllte
+# android_device_samsung_chagallltetmo

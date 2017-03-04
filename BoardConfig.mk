@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-TARGET_PATH := device/samsung/chagalllte
+TARGET_PATH := device/samsung/chagallltetmo
 
 include device/samsung/chagall-klimt-common/BoardConfig.mk
 
@@ -40,5 +40,5 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/chagalllte/sepolicy
+    device/samsung/chagallltetmo/sepolicy
 
