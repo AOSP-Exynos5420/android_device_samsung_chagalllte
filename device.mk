@@ -40,7 +40,9 @@ PRODUCT_PACKAGES += \
     rild
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=unknown
+    ro.carrier=unknown \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
