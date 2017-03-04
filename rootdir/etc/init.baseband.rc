@@ -5,9 +5,9 @@ on init
 
     symlink  /sys/devices/platform/s5p-ehci/ehci_power /dev/ehci_power
 
-    write /sys/module/modem_link_pm_xmm626x/parameters/l2_delay 500
-    write /sys/module/modem_link_pm_xmm626x/parameters/hub_delay 500
-    write /sys/module/modem_link_device_hsic_4ncm/parameters/tx_qlen 50
+    write /sys/module/link_pm_hsic_xmm626x/parameters/l2_delay 1000
+    write /sys/module/link_pm_hsic_xmm626x/parameters/hub_delay 100
+    write /sys/module/modem_link_device_hsic_ncm/parameters/tx_qlen 5
 
 on fs
     chown radio system /efs
@@ -18,7 +18,7 @@ on fs
     chown radio system /sys/devices/virtual/misc/umts_dm0/dm_state
     chown radio radio /sys/devices/platform/s5p-ehci/ehci_cpu_core
 
-service cpboot-daemon /system/bin/cbd -d -txmm7160 -bh -mh -p 13
+service cpboot-daemon /system/bin/cbd -d -txmm72xx -bh -mh -p 13
     class main
     user root
     group radio cache inet misc audio sdcard_rw log sdcard_r shell

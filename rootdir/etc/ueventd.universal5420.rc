@@ -72,6 +72,8 @@
 # vfs
 /dev/vfsspi               0660   system     system
 
+# Ril
+/dev/block/mmcblk0p8      0660   system     system
 /dev/block/mmcblk0p13     0660   system     radio
 /dev/umts*                0660   system     radio
 
