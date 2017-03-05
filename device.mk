@@ -51,6 +51,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=9
     ro.ril.telephony.mqanelements=5
 
+# Assert for flash script
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.assert.device=chagalllte
+
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, vendor/samsung/chagallltetmo/chagallltetmo-vendor.mk)
