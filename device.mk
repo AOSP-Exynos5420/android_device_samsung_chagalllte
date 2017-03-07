@@ -19,11 +19,21 @@ $(call inherit-product, device/samsung/chagall-klimt-common/device.mk)
 PRODUCT_PACKAGES += \
     init.baseband.rc
 
+# Audio
 PRODUCT_COPY_FILES += \
-    device/samsung/chagallltetmo/audio/audio_policy.conf:system/etc/audio_policy.conf
+    device/samsung/chagallltetmo/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
+    device/samsung/chagallltetmo/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# GPS
 PRODUCT_COPY_FILES += \
-    device/samsung/chagallltetmo/audio/mixer_paths.xml:system/etc/mixer_paths.xml
+    device/samsung/chagallltetmo/configs/gps/gps.conf:system/etc/gps.conf \
+    device/samsung/chagallltetmo/configs/gps/gps.xml:system/etc/gps.xml
+
+# GPS
+PRODUCT_COPY_FILES += \
+    device/samsung/chagallltetmo/configs/wifi/p2p_supplicant_overlay.conf:system/etc/p2p_supplicant_overlay.conf \
+    device/samsung/chagallltetmo/configs/wifi/wpa_supplicant.conf:system/etc/wpa_supplicant.conf \
+    device/samsung/chagallltetmo/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wpa_supplicant_overlay.conf
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
