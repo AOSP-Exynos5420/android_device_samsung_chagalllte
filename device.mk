@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     device/samsung/chagallltetmo/overlay
 
+# GPS Shim
+PRODUCT_PACKAGES += \
+    libdmitry
+
 # Radio (needed for audio controls even on wifi-only)
 PRODUCT_PACKAGES += \
     libril \
